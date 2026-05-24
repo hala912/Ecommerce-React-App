@@ -1,0 +1,16 @@
+.Headercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+  display: flex;
+  align-items: flex-start;
+
+}
+.logospan {
+  color: black;
+}
