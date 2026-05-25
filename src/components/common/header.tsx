@@ -10,9 +10,8 @@ const Header = () => {
         <h1 className={styles.logo}>
           <span className={styles.logospan}>My</span>
           <Badge bg="dark">App</Badge>
-          
         </h1>
-        <Cart /> 
+        <Cart />
       </div>
       <Navbar expand="lg" className="bg-body-tertiary">
         <div className="container-fluid">
