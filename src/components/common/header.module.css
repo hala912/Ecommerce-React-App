@@ -1,16 +1,23 @@
 .Headercontainer {
+  padding: 20px 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
+.headerLogo {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 2.3rem;
   margin: 0;
-  font-size: 24px;
-  display: flex;
-  align-items: flex-start;
-
 }
-.logospan {
-  color: black;
+
+.headerLogo h1 {
+  margin: 0;
+  display: flex;
+}
+
+.headerLogo h1 span {
+  display: block;
+  margin-right: 5px;
 }
