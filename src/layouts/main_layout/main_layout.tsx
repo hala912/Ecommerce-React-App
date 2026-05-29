@@ -8,7 +8,7 @@ const MainLayout = () => {
     <Container className={styles.container}>
       <Header />
       <div className={styles.wrapper}>
-        <Outlet /> //to render the pages wanted here 
+        <Outlet /> 
       </div>
       <Footer />  
     </Container>
