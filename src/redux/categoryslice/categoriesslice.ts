@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getCategories } from "./actions/getcategories";
+import type { loadingState } from "@schemas/shared.ts";
+import type { Categoryshared } from "@schemas/category.ts";
 interface CategoryState {
-   categories: {id: number, title: string, prefix: string, image: string}[];
-   loading: "idle" | "pending" | "succeeded" | "failed";
+   categories: Categoryshared[];
+   loading: loadingState;
    error: string | null;
 };
 
