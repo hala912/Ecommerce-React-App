@@ -29,7 +29,8 @@
       "@styles/*": ["src/styles/*"],
       "@layouts/*": ["src/layouts/*"],
       "@utils/*": ["src/utils/*"],
-      "@services/*": ["src/services/*"]
+      "@services/*": ["src/services/*"],
+      "@schemas/*": ["src/types/*"]
     },
     /* Linting */
     "strict": true,
