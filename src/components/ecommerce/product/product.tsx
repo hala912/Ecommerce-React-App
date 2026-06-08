@@ -1,9 +1,12 @@
 import { Button } from "react-bootstrap";
 import styles from "./product.module.css";
 import type { productshared } from "@schemas/product.ts";
+import { addToCart } from "@redux/cartslice/cartslice";
 const { product, productImg } = styles;
+import { useDispatch } from "react-redux";
+const Product = ({ id,name, price, img }: productshared) => {
+  const dispatch = useDispatch();
 
-const Product = ({ name, price, img }: productshared) => {
   return (
     <div className={product}>
       <div className={productImg}>
@@ -15,7 +18,11 @@ const Product = ({ name, price, img }: productshared) => {
       </div>
       <h2>{name}</h2>
       <h3>{price} EGP</h3>
-      <Button variant="info" style={{ color: "white" }}>
+      <Button variant="info" style={{ color: "white" }}
+      onClick={() => {
+        dispatch(addToCart(id));
+      }}
+      >
         Add to cart
       </Button>
     </div>
