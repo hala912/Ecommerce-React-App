@@ -1,5 +1,5 @@
 export type productshared = {
-    id?: number;
+    id: number;
     name: string;
     price: number;
     cat_prefix?: string;
