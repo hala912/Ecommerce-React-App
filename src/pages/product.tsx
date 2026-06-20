@@ -20,7 +20,8 @@ const ProductPage = () => {
   return (
     <div>
       <h1>Product Page</h1>
-      <GridList records={products} renderItem={(product) => <Product name={product.name} price={product.price} img={product.img} />} />
+      <GridList records={products} renderItem={(product) => <Product {...product} />} />
+
     </div>
   );
 }
